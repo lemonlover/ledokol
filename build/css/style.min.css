@@ -137,7 +137,7 @@
 .footer__yandex-map a:before {
   display: inline-block;
   padding-right: 10px;
-  content: url('/img/pin.png');
+  content: url('img/pin.png');
   vertical-align: middle;
 }
 .footer__yandex-map a:hover,
@@ -296,7 +296,7 @@ main {
 .external:after {
   display: inline-block;
   padding-left: 20px;
-  content: url('/img/right-arrow.png');
+  content: url('img/right-arrow.png');
 }
 .external:hover,
 .external:visited,
