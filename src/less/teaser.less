@@ -1,0 +1,960 @@
+ .header-fake
+{
+    position: fixed;
+    top: 8%;
+    left: 50%;
+
+    display: block;
+    display: inline-block;
+
+    width: 75%;
+    margin-left: -37.5%;
+
+    text-align: center;
+}
+
+.sticker-list
+{
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    &__item
+    {
+        display: block;
+
+        padding: 15px 0px;
+
+        
+        border-bottom: 1px solid #fff;
+        background: rgba(60,126,173,.8);
+        background:    -moz-linear-gradient(left, rgba(60,126,173,.8) 0%, rgba(88,127,171,1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(60,126,173,.8)), color-stop(100%, rgba(88,127,171,1)));
+        background: -webkit-linear-gradient(left, rgba(60,126,173,.8) 0%, rgba(88,127,171,1) 100%);
+        background:      -o-linear-gradient(left, rgba(60,126,173,.8) 0%, rgba(88,127,171,1) 100%);
+        background:     -ms-linear-gradient(left, rgba(60,126,173,.8) 0%, rgba(88,127,171,1) 100%);
+        background:         linear-gradient(to right, rgba(60,126,173,.8) 0%, rgba(88,127,171,1) 100%);
+
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c7ead', endColorstr='#587fab', GradientType=1 );
+       
+        font-family: @museo-font-Medium;
+        font-size: 20px;
+        font-weight: 300;
+        color:#fff;
+        text-align: center;
+
+        
+        &:hover,&:visited,&:focus{ 
+            outline: none !important;
+            color:#fff;
+            cursor: pointer;
+            text-decoration: none !important;
+
+        }
+    }
+}
+
+
+
+ 
+
+
+.footer-fake
+{
+    font-family: 'MuseoSansRegular';
+
+    position: fixed;
+    bottom: 8%;
+    left: 50%;
+
+    display: block;
+
+    width: 75%;
+    margin-left: -37.5%;
+
+    text-align: center;
+    &__phone
+    {
+        font-size: 18px;
+        & a {
+        color: #333;}
+    }
+    &__address
+    {
+        font-size: 14px;
+        margin-top: 5px;
+        opacity: .5;
+        color: #333;
+    }
+}
+
+
+.header
+{
+    box-shadow: inset 0 21px 15px -10px rgba(59, 56, 56, .43);
+    &__wrapper
+    {
+        display: block;
+
+        margin: 0 auto;
+        padding: 70px 13%;
+        @media(max-width:@mobile)
+        {
+            padding: 39px 13%;
+        }
+    }
+    &__logo
+    {
+        display: inline-block;
+
+        width: 20%;
+        @media(max-width:@mobile)
+        {
+            display: block;
+
+            width: 100%;
+            padding-bottom: 20px;
+
+            text-align: center;
+        }
+    }
+    &__text
+    {
+
+        & b {
+            font-family: @museo-font-Bold;
+        }
+        font-size: 18px;
+
+        line-height: 1.2em;
+        font-family: @museo-font-Medium;
+        display: inline-block;
+
+        width: 79%;
+        padding-left: 5%;
+
+        vertical-align: middle;
+        @media(max-width:@mobile)
+        {
+            display: inline-block;
+
+            width: 100%;
+            padding-left: 0;
+
+            text-align: center;
+        }
+    }
+}
+.footer
+{
+    box-shadow: inset 0 -20px 15px -15px rgba(59, 56, 56, .45);
+    &__wrapper
+    {
+        padding: 30px 7%;
+    }
+    &__left
+    {
+        display: inline-block;
+
+        width: 39%;
+
+        text-align: left;
+        vertical-align: top;
+        @media(max-width:@mobile)
+        {
+            display: block;
+
+            width: 100%;
+
+            text-align: center;
+        }
+    }
+    &__phone
+    {
+        font-size: 16px;
+        line-height: 1.875em;
+        & a {
+        color: rgb(54,54,54);}
+    }
+    &__mail a
+    {
+        font-size: 12px;
+
+        color: #5283ba;
+        &:hover,
+        &:visited,
+        &:focus
+        {
+            cursor: pointer;
+            text-decoration: none;
+
+            color: #5283ba;
+            outline: none;
+        }
+    }
+    &__right
+    {
+        display: inline-block;
+
+        width: 60%;
+
+        text-align: right;
+        vertical-align: top;
+        @media(max-width:@mobile)
+        {
+            display: block;
+
+            width: 100%;
+            padding-top: 10px;
+
+            text-align: center;
+        }
+    }
+    &__address
+    {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1.875em;
+
+        display: block;
+
+        margin-top: 0;
+
+        opacity: .6;
+        color: #000;
+    }
+    &__yandex-map
+    {
+        padding-top: 7px;
+        & a
+        {
+            font-size: 12px;
+
+            color: #5283ba;
+            &:before
+            {
+                display: inline-block;
+
+                padding-right: 10px;
+
+                content: url('/img/pin.png');
+                vertical-align: middle;
+            }
+            &:hover,
+            &:visited,
+            &:focus
+            {
+                padding-top: 9px;
+
+                cursor: pointer;
+                text-decoration: none;
+
+                color: #5283ba;
+                outline: none;
+            }
+        }
+    }
+}
+
+
+
+
+main
+{
+    display: none;
+}
+
+.fake-content--closed
+{
+    display: none;
+}
+
+
+.preloader
+{
+    position: fixed;
+    top: 37%;
+    left: 50%;
+
+    display: block;
+
+    width: 75%;
+    margin-left: -37.5%;
+
+    text-align: center;
+    &__title
+    {
+        font-family: @museo-font-Regular;
+        font-size: 14px;
+
+        height: inherit;
+        margin-top: 60px;
+
+        color: #5283ba;
+    }
+    &__wrapper
+    {
+        position: relative;
+
+        height: inherit;
+        padding: 0 20%;
+        &--loaded
+        {
+            /*-webkit-transition: all 1s ease-out;
+           -moz-transition: all 1s ease-out;
+            -ms-transition: all 1s ease-out;
+             -o-transition: all 1s ease-out;
+                transition: all 1s ease-out;
+          opacity: 0;*/
+        }
+    }
+    &__wrapper img
+    {
+        height: inherit;
+    }
+    &__curtain
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 30px;
+        left: 0;
+
+        display: inline-block;
+
+        height: inherit;
+        margin: 0 0 0 0;
+
+        background-color: #fff;
+        &--loaded
+        {
+            margin: 0 0 0 100%;
+
+            -webkit-transition: all 4.5s linear;
+               -moz-transition: all 4.5s linear;
+                -ms-transition: all 4.5s linear;
+                 -o-transition: all 4.5s linear;
+                    transition: all 4.5s linear;
+        }
+    }
+}
+
+
+.info-block
+{
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    &__title
+    {
+        font-family: @museo-font-Medium;
+        font-size: 20px;
+
+        padding: 35px 0 37px;
+
+        text-align: center;
+
+        line-height: 1.2em; 
+        color: #fff;
+        background: rgba(60,126,173,.8);
+        background:    -moz-linear-gradient(left, rgba(60,126,173,.8) 0%, rgba(88,127,171,1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(60,126,173,.8)), color-stop(100%, rgba(88,127,171,1)));
+        background: -webkit-linear-gradient(left, rgba(60,126,173,.8) 0%, rgba(88,127,171,1) 100%);
+        background:      -o-linear-gradient(left, rgba(60,126,173,.8) 0%, rgba(88,127,171,1) 100%);
+        background:     -ms-linear-gradient(left, rgba(60,126,173,.8) 0%, rgba(88,127,171,1) 100%);
+        background:         linear-gradient(to right, rgba(60,126,173,.8) 0%, rgba(88,127,171,1) 100%);
+
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c7ead', endColorstr='#587fab', GradientType=1 );
+        &--border-double
+        {
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+        }
+        &--border-top
+        {
+            border-top: 1px solid #fff;
+        }
+        &--border-bottom
+        {
+            border-bottom: 1px solid #fff;
+        }
+    }
+    &__content
+    {
+        &-wrapper
+        {
+            padding: 0 7%;
+        }
+    }
+}
+
+
+.slide-type-1
+{
+    padding: 98px 0 33px;
+    @media(max-width:@mobile)
+    {
+        padding: 13.8% 0 30px;
+    }
+    &__cont-left
+    {
+        display: inline-block;
+
+        width: 52.5%;
+
+        text-align: right;
+        vertical-align: top;
+        @media(max-width:@mobile)
+        {
+            display: block;
+
+            width: 100%;
+
+            text-align: center;
+        }
+    }
+    &__cont-right
+    {
+        display: inline-block;
+
+        width: 45%;
+
+        vertical-align: top;
+        @media(max-width:@mobile)
+        {
+            display: block;
+
+            width: 100%;
+
+            text-align: center;
+        }
+        &-title
+        {
+            font-family: @museo-font-Bold;
+            font-size: 26px;
+            line-height: 1.1em;
+
+            margin-bottom: 3em;
+            padding: 18px;
+
+            color: #fff;
+            @media(max-width:@mobile)
+            {
+                font-size:23px;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+
+
+
+.slide-type-2
+{
+    text-align: center;
+    &__wrapper
+    {
+        padding: 13.8% 23% 30px;
+        @media(max-width:@mobile)
+        {
+            padding: 13.8% 0 30px;
+        }
+    }
+    &__content
+    {
+        &-title
+        {
+            font-family: @museo-font-Bold;
+            font-size: 26px;
+            line-height: 1.3em;
+
+            margin-bottom: .35em;
+            padding: 23px;
+
+            color: #fff;
+            @media(max-width:@mobile)
+            {
+                padding: 23px 0;
+            }
+        }
+        &-text
+        {
+            font-family: @museo-font-Medium;
+            font-size: 14px;
+            line-height: 1.714em;
+
+            color: #fff;
+        }
+        &-bottom
+        {
+            padding-top: 40px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.external
+{
+    font-family: @museo-font-Medium;
+    font-size: 14px;
+    font-weight: 300;
+
+    display: block;
+
+    min-width: 200px;
+    max-width: 202px;
+    margin: -2px 20px;
+    padding: 9px 27px;
+
+    color: #fff;
+    border-radius: 37px;
+    background: rgba(255,255,255,.2);
+    background:    -moz-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,.2)), color-stop(100%, rgba(255,255,255,.2)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 100%);
+    background:      -o-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 100%);
+    background:     -ms-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 100%);
+    background:         linear-gradient(to right, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 100%);
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+    @media(max-width:@mobile)
+    {
+        margin: 0 auto;
+    }
+    &:after
+    {
+        display: inline-block;
+
+        padding-left: 20px;
+
+        content: url('/img/right-arrow.png');
+    }
+    &:hover,
+    &:visited,
+    &:focus
+    {
+        cursor: pointer;
+        text-decoration: none;
+
+        color: #fff;
+        outline: none;
+    }
+    &:hover
+    {
+        background: rgba(255,255,255,.5);
+        background:    -moz-linear-gradient(left, rgba(255,255,255,.5) 0%, rgba(255,255,255,.5) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,.5)), color-stop(100%, rgba(255,255,255,.5)));
+        background: -webkit-linear-gradient(left, rgba(255,255,255,.5) 0%, rgba(255,255,255,.5) 100%);
+        background:      -o-linear-gradient(left, rgba(255,255,255,.5) 0%, rgba(255,255,255,.5) 100%);
+        background:     -ms-linear-gradient(left, rgba(255,255,255,.5) 0%, rgba(255,255,255,.5) 100%);
+        background:         linear-gradient(to right, rgba(255,255,255,.5) 0%, rgba(255,255,255,.5) 100%);
+
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+    }
+}
+
+
+.requisits
+{
+    font-family: @museo-font-Medium;
+    font-size: 12px;
+
+    padding: 37px 20px 20px;
+    &__phone
+    {
+         display: inline;
+        & a{
+        font-weight: 700;
+
+     
+
+        color: #fff !important;}
+    }
+    &__email-link
+    {
+        font-weight: 500;
+
+        display: inline;
+
+        padding-left: 10px;
+        & a
+        {
+            color: #8dadd2;
+            &:hover,
+            &:visited,
+            &:focus
+            {
+                cursor: pointer;
+                text-decoration: none;
+
+                color: #8dadd2;
+            }
+
+            
+        }
+         @media(max-width:@mobile)
+            {
+              text-align: center;
+                padding: 10px 0;
+            }
+    }
+    &__address
+    {
+        font-weight: 700;
+
+        display: block;
+
+        margin-top: 7px;
+
+        opacity: .6;
+        color: #fff;
+    }
+}
+
+.callback-text
+{
+    line-height: 1.401em;
+
+   font-size: 20px;
+    color: rgb(123, 123, 123);
+    padding: 60px 13% 60px;
+
+    text-align: center;
+     @media(max-width:@mobile)
+            {
+                 font-size: 17px;
+                    padding: 00px 13% 60px;
+            }
+}
+
+
+
+
+
+.opins_box_a .carousel_a
+{
+    margin: -20px 0 0 0;
+}
+.opins_box_a .carousel_a .slides_list_crop
+{
+    padding: 20px 0 20px 0;
+}
+
+.opins_box_a .btn_moreBox
+{
+    margin-top: -40px;
+}
+
+
+
+
+
+.opins_list_a
+{
+    text-align: center;
+}
+.opins_list_a .item
+{
+    font-size: 16px;
+
+    width: 636px;
+    margin: 0 35px 0 0;
+
+    text-align: left;
+
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,.04);
+}
+.opins_list_a .item_i
+{
+    display: block;
+    overflow: hidden;
+
+    padding: 50px 50px 50px 255px;
+
+    text-decoration: none;
+}
+.opins_list_a .item_i_text-only
+{
+    display: block;
+    overflow: hidden;
+
+    padding: 50px 50px 50px 50px;
+
+    text-align: center;
+    text-decoration: none;
+}
+.opins_list_a .item .pic
+{
+    float: left;
+
+    width: 172px;
+    margin: 0 0 0 -205px;
+}
+.opins_list_a .item .pic img
+{
+    width: 100%;
+
+    vertical-align: top;
+
+    border: 1px solid #cdcdcd;
+}
+.opins_list_a .item .cont
+{
+    line-height: 1.7;
+
+    float: left;
+
+    width: 100%;
+}
+
+
+.opins_list_a .item .cont .text{
+  line-height: 1.625;
+  font-family: @museo-font-Medium;
+  font-size: 16px;
+  color: rgb(54, 54, 54);
+
+}
+
+
+.opins_list_a .item .cont .sign
+{
+    margin: 20px 0 0 0;
+      line-height: 1.625;
+  font-family: @museo-font-Medium;
+  font-size: 14px;
+  color: rgb(54, 54, 54);
+
+  & span {
+    padding-left: 5px;
+    opacity: 0.8;
+  }
+}
+
+
+
+.list_inline
+{
+    font-size: 0;
+
+    letter-spacing: -4px;
+}
+.list_inline .item,
+.list_inline .post,
+.list_inline .cell
+{
+    font-size: 17px;
+
+    display: inline-block;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box; 
+            box-sizing: border-box;
+
+    vertical-align: top;
+    letter-spacing: normal;
+}
+
+
+
+.carousel_a
+{
+    position: relative;
+}
+.carousel_a .slides_list_wrap
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+}
+.carousel_a .slides_list_crop
+{
+    position: relative;
+
+    overflow: hidden;
+}
+.carousel_a .slides_list
+{
+    position: relative;
+
+    white-space: nowrap;
+}
+.carousel_a .slides_list .slide
+{
+    white-space: normal;
+}
+.carousel_a.notScrollable .slides_list
+{
+    transform: translate3d(0px, 0px, 0px) !important;
+}
+.carousel_a.notScrollable .slides_list .slide:last-child
+{
+    margin-right: 0 !important;
+}
+.carousel_a.scrollable .slides_list
+{
+    width: 20000px;
+}
+.carousel_a.scrollable .slides_list .slide
+{
+    float: left;
+}
+.carousel_a .nav_btns
+{
+    display: none;
+}
+.carousel_a .nav_btns.enabled
+{
+    display: block;
+}
+
+
+.boxType_a
+{
+    position: relative;
+
+    transition: height .3s ease;
+
+    background: #f1f2f3;
+}
+.boxType_a .box_i
+{
+    position: relative; 
+
+    background: #f1f2f3;
+}
+.boxType_a .head_b
+{
+    overflow: hidden;
+
+    margin: 0 0 50px 0;
+    padding: 80px 0 0 0;
+
+    transition: margin .3s ease;
+    text-align: center;
+}
+.boxType_a .head_b .hl
+{
+    font-family: 'MuseoSansBold';
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+
+    position: relative;
+
+    margin: 0 0 26px 0;
+
+    text-transform: uppercase;
+}
+.boxType_a .head_b .i
+{
+    max-width: 880px;
+    margin: 0 auto;
+}
+.boxType_a .head_b p
+{
+    margin-bottom: 19px;
+}
+.boxType_a .head_b .intro
+{
+    position: relative;
+
+    overflow: hidden;
+}
+
+.boxType_a .btn_moreBox
+{
+    position: absolute;
+    z-index: 3;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    margin: -20px 0 0 0;
+
+    text-align: center;
+}
+.boxType_a .btn_moreBox a
+{
+    min-width: 178px;
+}
+
+
+
+
+
+.nav_btns_a .btn
+{
+    position: absolute;
+    top: 50%;
+
+    display: inline-block;
+
+    width: 65px;
+    height: 65px;
+    margin: -33px 0 0 0;
+
+    transition: opacity .2s ease;
+
+    border-radius: 50%;
+    background: #000;
+    background: rgba(0,0,0,.5);
+}
+.nav_btns_a .btn span
+{
+    font-size: 32px;
+
+    position: absolute;
+    top: 40%;
+
+    display: inline-block;
+
+    margin: -16px 0 0 0; 
+
+    color: #fff;
+}
+.nav_btns_a .btn:hover
+{
+    opacity: .8;
+}
+.nav_btns_a .btn.prev
+{
+    left: 30px;
+}
+.nav_btns_a .btn.prev span
+{
+    right: 18px;
+}
+.nav_btns_a .btn.prev span:before
+{
+    content: '\e902';
+    font-family:"icomoon";
+}
+.nav_btns_a .btn.next
+{
+    right: 30px;
+}
+.nav_btns_a .btn.next span
+{
+    left: 18px;
+
+    background-position: -14px 0;
+}
+.nav_btns_a .btn.next span:before
+{
+    content: '\e905';
+     font-family:"icomoon";
+}
